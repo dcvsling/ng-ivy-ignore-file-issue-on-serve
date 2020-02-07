@@ -7,5 +7,11 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "annotationsAs": "decorators",
+    "enableIvy": true,
+    "trace": true
+  }
 }

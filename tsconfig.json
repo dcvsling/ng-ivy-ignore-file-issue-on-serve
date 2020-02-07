@@ -10,7 +10,15 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es5",
+    "target": "es2015",
+    "paths": {
+      "@services": [
+        "./src/app/services"
+      ],
+      "@services/*": [
+        "./src/app/services/*"
+      ]
+    },
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -18,5 +26,11 @@
       "es2018",
       "dom"
     ]
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "annotationsAs": "decorators",
+    "enableIvy": true,
+    "trace": true
   }
 }
