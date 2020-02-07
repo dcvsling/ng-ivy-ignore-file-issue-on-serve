@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "medsupply"
+  "defaultProject": "medsupply",
+  "cli": {
+    "analytics": "a04d33e3-a327-4d67-9a81-a8d5f455105f"
+  }
 }

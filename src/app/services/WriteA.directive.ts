@@ -1,6 +1,7 @@
 import { Directive, ElementRef, OnInit, Renderer2 } from '@angular/core';
 
-export class WriteADirective  {
+@Directive({selector: '[write-a]'})
+export class WriteADirective implements OnInit {
   ngOnInit(): void {
     this.renderer.appendChild(this.elf.nativeElement, this.renderer.createText('A'));
   }
